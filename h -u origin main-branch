@@ -1,0 +1,23 @@
+[33mcommit fef5cc0bf5e19e8223a0184c4cb85411790dc24d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain-branch[m[33m)[m
+Author: matteusviegas <msmatteusbr2@gmail.com>
+Date:   Wed Oct 1 17:15:54 2025 -0300
+
+    Atualizando arquivos e removendo propriedades do Maven
+
+[33mcommit 5d70ca971b49f5026c557ae5509504c70e51bddc[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: matteusviegas <msmatteusbr2@gmail.com>
+Date:   Wed Oct 1 13:04:27 2025 -0300
+
+    criação do controller
+
+[33mcommit 949ead30f638128dec5035757d95070852d926a3[m
+Author: matteusviegas <msmatteusbr2@gmail.com>
+Date:   Wed Oct 1 13:01:32 2025 -0300
+
+    criação da controller
+
+[33mcommit 866220d181f81e9817213ecd021b9efab7f70bf7[m
+Author: matteusviegas <msmatteusbr2@gmail.com>
+Date:   Wed Oct 1 12:25:45 2025 -0300
+
+    first commit
