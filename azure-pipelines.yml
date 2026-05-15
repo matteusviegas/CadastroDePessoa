@@ -4,12 +4,32 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: Maven@4
-  inputs:
-    mavenPomFile: 'pom.xml'
-    goals: 'clean package -DskipTests'
-    publishJUnitResults: false
-    javaHomeOption: 'JDKVersion'
-    jdkVersionOption: '1.17'
-    mavenVersionOption: 'Default'
+stages:
+- stage: CI
+  displayName: Build
+  jobs:
+  - job: Build
+    steps:
+    - task: Maven@4
+      inputs:
+        mavenPomFile: 'pom.xml'
+        goals: 'clean package -DskipTests'
+        publishJUnitResults: false
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.17'
+        mavenVersionOption: 'Default'
+
+    - publish: '$(System.DefaultWorkingDirectory)/target'
+      artifact: drop
+
+- stage: CD
+  displayName: Release
+  dependsOn: CI
+  jobs:
+  - job: Deploy
+    steps:
+    - download: current
+      artifact: drop
+
+    - script: echo "Deploy manual simulado para ambiente em nuvem"
+      displayName: "Deploy simulado"
