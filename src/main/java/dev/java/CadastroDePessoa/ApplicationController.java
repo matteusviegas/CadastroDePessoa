@@ -4,10 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class PessoaController {
+public class ApplicationController {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PessoaController.class, args);
-	}
-
+    public static void main(String[] args) {
+        SpringApplication.run(ApplicationController.class, args);
+    }
 }
