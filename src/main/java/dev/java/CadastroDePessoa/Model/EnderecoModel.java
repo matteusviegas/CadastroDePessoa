@@ -8,7 +8,8 @@ import jakarta.persistence.*;
 public class EnderecoModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "endereco_seq")
+    @SequenceGenerator(name = "endereco_seq", sequenceName = "ENDERECO_SEQ", allocationSize = 1)
     private Long id;
 
     private String rua;

@@ -9,7 +9,8 @@ import java.util.List;
 public class PessoaModel {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "pessoa_seq")
+    @SequenceGenerator(name = "pessoa_seq", sequenceName = "PESSOA_SEQ", allocationSize = 1)
     private Long id;
 
     private String nome;

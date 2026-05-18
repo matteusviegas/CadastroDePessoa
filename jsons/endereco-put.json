@@ -1,0 +1,10 @@
+{
+  "rua": "Rua Fiap Dimdim Atualizada",
+  "numero": "200",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "cep": "02000-000",
+  "pessoa": {
+    "id": 3
+  }
+}
