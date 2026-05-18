@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "rua": "Rua Azure Atualizada",
+  "numero": "200",
+  "cidade": "São Paulo",
+  "estado": "SP",
+  "cep": "02000-000",
+  "pessoa": {
+    "id": 3
+  }
+}
