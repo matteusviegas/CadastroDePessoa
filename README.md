@@ -79,6 +79,3 @@ Aplicação hospedada no Azure App Service.
 - RM561090 Matteus Viegas
 - RM561089 Sulamita Viegas
 - RM560914 Lucas Almeida
-
-## Integrantes
-- Matteus Viegas
